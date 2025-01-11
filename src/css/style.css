@@ -291,26 +291,47 @@ header .grid-layout nav .nav-list li a:hover {
     line-height: 160%
 }
 
-#s-hero .grid-layout #hero #hero-container-text a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: var(--main-color);
+
+#s-hero .grid-layout #hero #hero-container-text .button-primary {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, var(--main-color), var(--secondary-color));
     color: #fff;
-    backdrop-filter: blur(10px);
-    padding: 20px 32px;
-    max-width: 300px;
-    border-radius: 4px;
-    transition: all .4s ease;
-    margin-top: 30px;
+    text-align: center;
     font-size: 18px;
-    font-weight: 400
+    font-weight: 500;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-#s-hero .grid-layout #hero #hero-container-text a:hover {
-    padding: 20px 45px;
-    max-width: 325px
+#s-hero .grid-layout #hero #hero-container-text .button-primary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
 }
+
+#s-hero .grid-layout #hero #hero-container-text .button-secondary {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #121212, #333);
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-decoration: none;
+    margin-top: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+#s-hero .grid-layout #hero #hero-container-text .button-secondary:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
+}
+
+
 
 @media screen and (max-width: 1200px) {
     #s-hero .grid-layout #hero #logo {
