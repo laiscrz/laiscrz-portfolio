@@ -6,7 +6,7 @@
 }
 
 ::selection {
-    background-color: #ff006f;
+    background-color: var(--main-color);
     color: #fff
 }
 
@@ -68,7 +68,7 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #ff006f;
+    background-color: var(--main-color);
     border-radius: 8px
 }
 
@@ -133,7 +133,7 @@ header .grid-layout nav .nav-list li a::after {
     height: 2px;
     bottom: -7px;
     left: 0;
-    background: linear-gradient(270deg, #ff006f 0%, #17161d 100%);
+    background: linear-gradient(270deg, var(--main-color) 0%, #17161d 100%);
     transform-origin: bottom right;
     transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1)
 }
@@ -219,4 +219,171 @@ header .grid-layout nav .nav-list li a:hover {
     .mobile-menu {
         display: block
     }
+}
+
+#s-hero {
+    padding: 0px 50px;
+    background-color: #111;
+    position: relative
+}
+
+@media screen and (max-width: 992px) {
+    #s-hero {
+        padding: 100px 20px 0px 20px
+    }
+}
+
+#s-hero .grid-layout #hero {
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    padding: 100px 0px;
+    overflow: hidden;
+    width: 100%
+}
+
+@media screen and (max-width: 992px) {
+    #s-hero .grid-layout #hero {
+        padding: 0px
+    }
+}
+
+#s-hero .grid-layout #hero #hero-container-text {
+    width: 100%;
+    flex-direction: column
+}
+
+@media screen and (max-width: 992px) {
+    #s-hero .grid-layout #hero #hero-container-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        padding: 0px
+    }
+}
+
+#s-hero .grid-layout #hero #hero-container-text h1 {
+    color: #fff;
+    max-width: 650px;
+    line-height: 140%;
+    font-size: 4rem;
+    font-weight: 500
+}
+
+@media screen and (max-width: 992px) {
+    #s-hero .grid-layout #hero #hero-container-text h1 {
+        font-size: 3.2rem
+    }
+}
+
+#s-hero .grid-layout #hero #hero-container-text h1 span {
+    color: var(--main-color)
+}
+
+#s-hero .grid-layout #hero #hero-container-text p {
+    color: #9ca3af;
+    font-size: 2rem;
+    max-width: 600px;
+    margin: 40px 0px;
+    font-weight: 300;
+    line-height: 160%
+}
+
+#s-hero .grid-layout #hero #hero-container-text a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--main-color);
+    color: #fff;
+    backdrop-filter: blur(10px);
+    padding: 20px 32px;
+    max-width: 300px;
+    border-radius: 4px;
+    transition: all .4s ease;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 400
+}
+
+#s-hero .grid-layout #hero #hero-container-text a:hover {
+    padding: 20px 45px;
+    max-width: 325px
+}
+
+@media screen and (max-width: 1200px) {
+    #s-hero .grid-layout #hero #logo {
+        display: none
+    }
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #151515;
+    color: #fff;
+    padding: 24px 0px
+}
+
+footer .grid-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%
+}
+
+footer p {
+    font-size: 1.8rem
+}
+
+footer p a {
+    font-weight: 500;
+    color: var(--main-color)
+}
+
+footer img {
+    width: 32px
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+@media screen and (max-width: 1200px) {
+    footer .grid-layout {
+        text-align: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 48px
+    }
+
+    footer .grid-layout div {
+        display: none
+    }
+}
+
+.typewriter:after {
+    content: "|";
+    margin-left: 8px;
+    opacity: 1;
+    animation: blink 1s infinite;
+    color: var(--main-color)
+}
+
+@keyframes blink {
+    100% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: 0
+    }
+}
+
+.grid-layout {
+    max-width: 1140px;
+    margin: 0 auto
 }
