@@ -50,7 +50,7 @@ input:focus {
 
 body {
     font-family: "Archivo";
-    background-color: #fff;
+    background-color: var(--color-white);
     overflow-x: hidden
 }
 
@@ -64,7 +64,7 @@ html {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #111
+    background-color: var(--bg-main)
 }
 
 ::-webkit-scrollbar-thumb {
@@ -74,7 +74,7 @@ html {
 
 header {
     padding: 0px 50px;
-    background: #111;
+    background: var(--bg-main);
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     border-bottom: 1px solid #101013;
@@ -120,7 +120,7 @@ header .grid-layout nav .nav-list li {
 }
 
 header .grid-layout nav .nav-list li a {
-    color: #9ca3af;
+    color: var(--color-gray);
     position: relative;
     font-size: 1.8rem
 }
@@ -144,7 +144,7 @@ header .grid-layout nav .nav-list li a:hover::after {
 }
 
 header .grid-layout nav .nav-list li a:hover {
-    color: #fff
+    color: var(--color-white)
 }
 
 .mobile-menu {
@@ -154,7 +154,7 @@ header .grid-layout nav .nav-list li a:hover {
 .mobile-menu div {
     width: 32px;
     height: 1px;
-    background-color: #fff;
+    background-color: var(--color-white);
     margin: 8px;
     transition: .4s
 }
@@ -201,7 +201,7 @@ header .grid-layout nav .nav-list li a:hover {
         width: 100vw;
         height: 100vh;
         z-index: 999;
-        background-color: #151515;
+        background-color: var(--bg-secondary);
         flex-direction: column;
         padding-top: 96px;
         visibility: hidden
@@ -223,7 +223,7 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-hero {
     padding: 0px 50px;
-    background-color: #111;
+    background-color: var(--bg-main);
     position: relative
 }
 
@@ -265,7 +265,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-hero .grid-layout #hero #hero-container-text h1 {
-    color: #fff;
+    color: var(--color-white);
     max-width: 650px;
     line-height: 140%;
     font-size: 4rem;
@@ -283,7 +283,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-hero .grid-layout #hero #hero-container-text p {
-    color: #9ca3af;
+    color: var(--color-gray);
     font-size: 2rem;
     max-width: 600px;
     margin: 40px 0px;
@@ -297,7 +297,7 @@ header .grid-layout nav .nav-list li a:hover {
     padding: 12px 24px;
     border-radius: 50px;
     background: linear-gradient(135deg, var(--main-color), var(--secondary-color));
-    color: #fff;
+    color: var(--color-white);
     text-align: center;
     font-size: 18px;
     font-weight: 500;
@@ -316,7 +316,7 @@ header .grid-layout nav .nav-list li a:hover {
     padding: 12px 24px;
     border-radius: 50px;
     background: linear-gradient(135deg, #121212, #333);
-    color: #fff;
+    color: var(--color-white);
     text-align: center;
     font-size: 18px;
     font-weight: 500;
@@ -342,7 +342,7 @@ header .grid-layout nav .nav-list li a:hover {
 footer {
     width: 100%;
     height: auto;
-    background-color: #151515;
+    background-color: var(--bg-secondary);
     color: #fff;
     padding: 24px 0px
 }
