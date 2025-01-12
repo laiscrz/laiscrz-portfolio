@@ -448,7 +448,7 @@ header .grid-layout nav .nav-list li a:hover {
     font-size: 1.8rem;
     color: #9ca3af;
     line-height: 160%;
-    margin: 32px 0px 48px 0px
+    margin: 32px 0px 32px 0px
 }
 
 #s-about .grid-layout>div div:nth-child(2) nav ul {
@@ -480,12 +480,12 @@ header .grid-layout nav .nav-list li a:hover {
     border-color: var(--main-color)
 }
 
-.tabs {
-    margin: 32px 0px 48px 0px;
+#s-about .grid-layout>div .tabs {
+    margin: 32px 0px 32px 0px;
     gap: 0.5rem;
 }
 
-.tabs-nav {
+#s-about .grid-layout>div .tabs .tabs-nav {
     display: flex;
     gap: 1rem;
     margin: 1rem 0;
@@ -494,41 +494,41 @@ header .grid-layout nav .nav-list li a:hover {
 
 }
 
-.tab-button {
+#s-about .grid-layout>div .tabs .tabs-nav .tab-button {
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    color: var(--main-color);
+    color: var(--color-white);
     background: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     position: relative;
     border-bottom: 2px solid transparent;
     transition: border-color 0.3s ease;
 }
 
-.tab-button.active {
-    border-bottom: 2px solid var(--secondary-color);
+#s-about .grid-layout>div .tabs .tabs-nav .tab-button.active {
+    border-bottom: 2px solid var(--main-color);
     font-weight: bold;
 }
 
-.tab-content {
+#s-about .grid-layout>div .tabs .tab-content {
     display: none;
     margin-top: 1rem;
-    color: var(--color-white);
+    color: var(--color-gray);
     font-size: 1.5rem;
 }
 
-.tab-content ul {
+#s-about .grid-layout>div .tabs .tab-content ul {
     margin-top: 2rem;
     list-style-type: disc;
     padding-left: 1.5rem;
 }
 
-.tab-content ul li {
+#s-about .grid-layout>div .tabs .tab-content ul li {
     margin-bottom: 0.8rem; 
 }
 
-.tab-content.active {
+#s-about .grid-layout>div .tabs .tab-content.active {
     display: block;
 }
 
