@@ -617,7 +617,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-projects .grid-layout #projects>article:hover {
-    border: 1px solid #986dff
+    border: 1px solid var(--main-color)
 }
 
 @media screen and (max-width: 1200px) {
