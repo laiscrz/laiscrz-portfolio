@@ -9,3 +9,6 @@ document.querySelectorAll(".tab-button").forEach(button => {
         document.getElementById(tabId).classList.add("active");
     });
 });
+
+document.querySelector(".tab-button[data-tab='education']").classList.add("active");
+document.getElementById("education").classList.add("active");
