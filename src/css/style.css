@@ -532,6 +532,202 @@ header .grid-layout nav .nav-list li a:hover {
     display: block;
 }
 
+#s-projects {
+    padding: 96px 48px;
+    text-align: center;
+    background-color: #111
+}
+
+@media screen and (max-width: 992px) {
+    #s-projects {
+        padding: 48px 24px
+    }
+}
+
+#s-projects .grid-layout h2 {
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 500
+}
+
+#s-projects .grid-layout h2 span {
+    color: var(--main-color)
+}
+
+#s-projects .grid-layout #projects {
+    margin: 24px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    text-align: left
+}
+
+#s-projects .grid-layout #projects .project-one {
+    border: 1px solid #e51d37
+}
+
+#s-projects .grid-layout #projects .project-one:hover {
+    border: 1px solid #e51d37
+}
+
+#s-projects .grid-layout #projects .project-two {
+    border: 1px solid #00a3ff
+}
+
+#s-projects .grid-layout #projects .project-two:hover {
+    border: 1px solid #00a3ff
+}
+
+#s-projects .grid-layout #projects .project-three {
+    border: 1px solid #a6fb98
+}
+
+#s-projects .grid-layout #projects .project-three:hover {
+    border: 1px solid #a6fb98
+}
+
+#s-projects .grid-layout #projects .project-four {
+    border: 1px solid #536fed
+}
+
+#s-projects .grid-layout #projects .project-four:hover {
+    border: 1px solid #536fed
+}
+
+#s-projects .grid-layout #projects .project-five {
+    border: 1px solid #ff4400;
+}
+
+#s-projects .grid-layout #projects .project-five:hover {
+    border: 1px solid #ff4400;
+}
+
+#s-projects .grid-layout #projects>article {
+    height: auto;
+    padding: 32px;
+    margin: 8px;
+    flex-basis: calc(33% - 20px);
+    flex-grow: 1;
+    border: 1px solid #111;
+    transition: 1s all ease;
+    background-color: #151515;
+    height: auto
+}
+
+#s-projects .grid-layout #projects>article:hover {
+    border: 1px solid #986dff
+}
+
+@media screen and (max-width: 1200px) {
+    #s-projects .grid-layout #projects>article {
+        flex-basis: calc(50% - 20px)
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #s-projects .grid-layout #projects>article {
+        flex-basis: calc(100% - 20px)
+    }
+}
+
+#s-projects .grid-layout #projects>article h3 {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 500
+}
+
+#s-projects .grid-layout #projects>article p {
+    line-height: 24px;
+    margin: 24px 0px;
+    color: #9ca3af;
+    line-height: 3.2rem;
+    font-size: 1.8rem
+}
+
+#s-projects .grid-layout #project-one {
+    color: #e51d37
+}
+
+#s-projects .grid-layout #project-one::after {
+    background: linear-gradient(270deg, #e51d37 0%, #17161d 100%)
+}
+
+#s-projects .grid-layout #project-two {
+    color: #00a3ff
+}
+
+#s-projects .grid-layout #project-two::after {
+    background: linear-gradient(270deg, #00a3ff 0%, #17161d 100%)
+}
+
+#s-projects .grid-layout #project-three {
+    color: #a6fb98
+}
+
+#s-projects .grid-layout #project-three::after {
+    background: linear-gradient(270deg, #a6fb98 0%, #17161d 100%)
+}
+
+#s-projects .grid-layout #project-four {
+    color: #536fed
+}
+
+#s-projects .grid-layout #project-four::after {
+    background: linear-gradient(270deg, #536fed 0%, #17161d 100%)
+}
+
+#s-projects .grid-layout #projects #project-five {
+    color: #ff4400;
+}
+
+#s-projects .grid-layout #projects #project-five::after {
+    background: linear-gradient(270deg, #ff4400 0%, #17161d 100%);
+}
+
+#s-projects .grid-layout a {
+    color: var(--main-color);
+    position: relative;
+    font-size: 2rem;
+    font-weight: 400
+}
+
+#s-projects .grid-layout a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -7px;
+    left: 0;
+    background: linear-gradient(270deg, var(--main-color) 0%, #17161d 100%);
+    transform-origin: bottom right;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1)
+}
+
+#s-projects .grid-layout a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left
+}
+
+#s-projects .grid-layout a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -7px;
+    left: 0;
+    transform-origin: bottom right;
+    transition: transform .5s cubic-bezier(0.86, 0, 0.07, 1)
+}
+
+#s-projects .grid-layout a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left
+}
+
 footer {
     width: 100%;
     height: auto;
