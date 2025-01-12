@@ -331,12 +331,205 @@ header .grid-layout nav .nav-list li a:hover {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
 }
 
-
-
 @media screen and (max-width: 1200px) {
     #s-hero .grid-layout #hero #logo {
         display: none
     }
+}
+
+
+#s-about {
+    padding: 72px 0px;
+    background-color: #111
+}
+
+@media screen and (max-width: 1200px) {
+    #s-about {
+        padding: 72px 20px
+    }
+}
+
+#s-about .grid-layout>div {
+    background-color: #151515;
+    border: 2px solid #1f1f1f;
+    padding: 24px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto
+}
+
+@media screen and (max-width: 1200px) {
+    #s-about .grid-layout>div {
+        flex-wrap: wrap;
+        gap: 32px
+    }
+}
+
+#s-about .grid-layout>div #creator-photo {
+    width: 47%;
+    background-image: url("https://user-images.githubusercontent.com/74038190/212750996-938b257b-266c-45a7-9af7-655341c0f58b.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    height: 500px
+}
+
+@media screen and (max-width: 1200px) {
+    #s-about .grid-layout>div #creator-photo {
+        width: 100%;
+        height: 400px
+    }
+}
+
+@media screen and (max-width: 992px) {
+    #s-about .grid-layout>div #creator-photo {
+        height: 350px
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #s-about .grid-layout>div #creator-photo {
+        height: 300px
+    }
+}
+
+#s-about .grid-layout>div #creator-photo h3 {
+    color: #111;
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 16px;
+    width: 180px;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 16px
+}
+
+#s-about .grid-layout>div div:nth-child(2) {
+    width: 49%
+}
+
+@media screen and (max-width: 1200px) {
+    #s-about .grid-layout>div div:nth-child(2) {
+        width: 100%
+    }
+}
+
+#s-about .grid-layout>div div:nth-child(2) h2 {
+    font-size: 4rem;
+    font-weight: 500;
+    margin: 16px 0px;
+    color: #fff
+}
+
+@media screen and (max-width: 992px) {
+    #s-about .grid-layout>div div:nth-child(2) h2 {
+        font-size: 3.2rem
+    }
+}
+
+#s-about .grid-layout>div div:nth-child(2) h3 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    margin-bottom: 16px;
+    color: #fff
+}
+
+#s-about .grid-layout>div div:nth-child(2) h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--main-color)
+}
+
+#s-about .grid-layout>div div:nth-child(2) p {
+    font-size: 1.8rem;
+    color: #9ca3af;
+    line-height: 160%;
+    margin: 32px 0px 48px 0px
+}
+
+#s-about .grid-layout>div div:nth-child(2) nav ul {
+    display: flex;
+    align-items: center;
+    gap: 16px
+}
+
+@media screen and (max-width: 1200px) {
+    #s-about .grid-layout>div div:nth-child(2) nav ul {
+        flex-wrap: wrap
+    }
+}
+
+#s-about .grid-layout>div div:nth-child(2) nav ul a {
+    background-color: #111;
+    border: 2px solid #1f1f1f;
+    border-radius: 6px;
+    padding: 16px
+}
+
+@media screen and (max-width: 1200px) {
+    #s-about .grid-layout>div div:nth-child(2) nav ul a img {
+        width: 40px
+    }
+}
+
+#s-about .grid-layout>div div:nth-child(2) nav ul a:hover {
+    border-color: var(--main-color)
+}
+
+.tabs {
+    margin: 32px 0px 48px 0px;
+    gap: 0.5rem;
+}
+
+.tabs-nav {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    position: relative;
+    gap: 16px;
+
+}
+
+.tab-button {
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    color: var(--main-color);
+    background: none;
+    font-size: 1.5rem;
+    position: relative;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.tab-button.active {
+    border-bottom: 2px solid var(--secondary-color);
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+    margin-top: 1rem;
+    color: var(--color-white);
+    font-size: 1.5rem;
+}
+
+.tab-content ul {
+    margin-top: 2rem;
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.tab-content ul li {
+    margin-bottom: 0.8rem; 
+}
+
+.tab-content.active {
+    display: block;
 }
 
 footer {
