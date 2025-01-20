@@ -532,6 +532,182 @@ header .grid-layout nav .nav-list li a:hover {
     display: block;
 }
 
+
+#s-skills {
+    background-color: #151515;
+    color: #fff;
+    padding: 96px 48px
+}
+
+@media screen and (max-width: 992px) {
+    #s-skills {
+        padding: 48px 24px
+    }
+}
+
+#s-skills .grid-layout h2 {
+    padding-bottom: 24px;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 500
+}
+
+#s-skills .grid-layout h2 span {
+    color: var(--main-color)
+}
+
+#s-skills .grid-layout #skill {
+    margin-top: 32px;
+    display: flex;
+    gap: 40px
+}
+
+@media screen and (max-width: 1200px) {
+    #s-skills .grid-layout #skill {
+        flex-wrap: wrap
+    }
+}
+
+#s-skills .grid-layout #skill .option-skill {
+    display: flex;
+    width: 25%;
+    flex-direction: column
+}
+
+@media screen and (max-width: 1200px) {
+    #s-skills .grid-layout #skill .option-skill {
+        width: 100%
+    }
+}
+
+#s-skills .grid-layout #skill .option-skill .activeSkill {
+    border-left: 4px solid var(--main-color);
+    color: var(--main-color)
+}
+
+#s-skills .grid-layout #skill .option-skill .activeSkill h3 {
+    font-weight: 600
+}
+
+#s-skills .grid-layout #skill .option-skill>div {
+    padding: 24px 32px;
+    text-align: left;
+    background-color: #111;
+    border-left: 4px solid #111
+}
+
+#s-skills .grid-layout #skill .option-skill>div:hover {
+    cursor: pointer
+}
+
+#s-skills .grid-layout #skill .option-skill>div h3 {
+    font-size: 1.8rem;
+    font-weight: 400
+}
+
+#s-skills .grid-layout #skill .text-skill {
+    width: 75%
+}
+
+@media screen and (max-width: 1200px) {
+    #s-skills .grid-layout #skill .text-skill {
+        width: 100%
+    }
+}
+
+#s-skills .grid-layout #skill .text-skill>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+@media screen and (max-width: 1200px) {
+    #s-skills .grid-layout #skill .text-skill>div {
+        flex-wrap: wrap;
+        gap: 32px
+    }
+}
+
+#s-skills .grid-layout #skill .text-skill>div h4 {
+    font-size: 2.4rem;
+    font-weight: 400
+}
+
+#s-skills .grid-layout #skill .text-skill>div p {
+    font-size: 1.8rem;
+    color: #9ca3af
+}
+
+#s-skills .grid-layout #skill .text-skill h5 {
+    font-size: 2rem;
+    margin: 32px 0px;
+    font-weight: 500;
+    color: var(--main-color)
+}
+
+#s-skills .grid-layout #skill .text-skill p {
+    font-size: 2rem;
+    line-height: 160%;
+    color: #9ca3af;
+    font-weight: 400
+}
+
+.card-skill {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    width: 120px;
+    height: 120px;
+    perspective: 1000px;
+    position: relative;
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    border: 2px solid var(--main-color);
+}
+
+.card-front {
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-back {
+    background: var(--main-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+.card {
+    display: none;
+}
+
+.card.active {
+    display: block;
+}
+
 #s-projects {
     padding: 96px 48px;
     text-align: center;
