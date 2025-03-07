@@ -739,6 +739,14 @@ header .grid-layout nav .nav-list li a:hover {
     border: 1px solid #ff4400;
 }
 
+#s-projects .grid-layout #projects .project-six {
+    border: 1px solid #ffff00;
+}
+
+#s-projects .grid-layout #projects .project-six:hover {
+    border: 1px solid #ffff00;
+}
+
 #s-projects .grid-layout #projects>article {
     height: auto;
     padding: 32px;
@@ -819,6 +827,14 @@ header .grid-layout nav .nav-list li a:hover {
 
 #s-projects .grid-layout #projects #project-five::after {
     background: linear-gradient(270deg, #ff4400 0%, #17161d 100%);
+}
+
+#s-projects .grid-layout #projects #project-six {
+    color: #ffff00;
+}
+
+#s-projects .grid-layout #projects #project-six::after {
+    background: linear-gradient(270deg, #ffff00 0%, #17161d 100%);
 }
 
 #s-projects .grid-layout a {
