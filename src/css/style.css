@@ -331,6 +331,10 @@ header .grid-layout nav .nav-list li a:hover {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.2);
 }
 
+#s-hero .grid-layout #hero #logo {
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 1200px) {
     #s-hero .grid-layout #hero #logo {
         display: none
