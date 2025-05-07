@@ -332,6 +332,8 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-hero .grid-layout #hero #logo {
+    width: 60%;
+    height: 60%;
     border-radius: 50%;
 }
 
@@ -529,7 +531,7 @@ header .grid-layout nav .nav-list li a:hover {
 }
 
 #s-about .grid-layout>div .tabs .tab-content ul li {
-    margin-bottom: 0.8rem; 
+    margin-bottom: 0.8rem;
 }
 
 #s-about .grid-layout>div .tabs .tab-content.active {
@@ -629,7 +631,8 @@ header .grid-layout nav .nav-list li a:hover {
     position: relative;
 }
 
-.card-front, .card-back {
+.card-front,
+.card-back {
     position: absolute;
     width: 100%;
     height: 100%;
