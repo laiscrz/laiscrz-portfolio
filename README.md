@@ -1,4 +1,4 @@
-<img src="https://github.com/user-attachments/assets/5bbb964c-2afa-4f42-a228-f805b563ec9c" alt="Preview Portfolio Website" style="width: 100%; height: 40%;">
+<img src="src/assets/images/preview_portfolio.png" alt="Preview Portfolio Website" style="width: 100%; height: 40%;">
 
 <h1 align="center">
   <img src="src/assets/icons/logo-icon.svg" width="40"> Laís Cruz - Portfólio
